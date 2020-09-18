@@ -34,11 +34,11 @@ CleverTap and Firebase can be used for push notifications in this library.
 
 ## Ads (Interstitial and Native)
 
-Add the following lines to your app-level build.gradle file.
+1. Add the following lines to your app-level build.gradle file.
 ```
 implementation 'com.google.android.gms:play-services-ads:{latestVersion}
 ```
-Add the following lines inside the application tag in *AndroidManifest.xml* file
+2. Add the following lines inside the application tag in *AndroidManifest.xml* file
 ```
 <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
