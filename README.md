@@ -27,15 +27,11 @@ A boolean value 'onlyFirebase' needs to be provided as parameter while using thi
 CleverTap and Firebase can be used for push notifications in this library.
 
 * We have 4 types of push notifications P, B, L and D which are identified by the which parameter.
-* 'to' can have two values *fcmToken* or *topicName*
-
-c. **P** type notifications must open the play store.
-
-d. **B** type notifications must open the default browser.
-
-e. **L** type notifications must open the webview within the app.
-
-f. **D** type notification must open a specific page within the app.
+* ***to*** can have two values *fcmToken* or *topicName*
+* **P** type notifications must open the play store.
+* **B** type notifications must open the default browser.
+* **L** type notifications must open the webview within the app.
+* **D** type notification must open a specific page within the app.
 
 Data format to send for push notifications
 ```
