@@ -94,7 +94,7 @@ loadInterstitial(mInterstitialAd: InterstitialAd)
 ```
 #### Example
 ```
- ad = newInterstitialAd(resources.getString(R.string.test_interstitial),this@MainActivity, "app_exit", this)
+ ad = newInterstitialAd(resources.getString(R.string.test_interstitial), this@MainActivity, "app_exit", this)
  loadInterstitial(ad)
  if (ad.isLoaded) {
     ad.show()
