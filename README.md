@@ -50,24 +50,15 @@ Add the following lines inside the application tag in *AndroidManifest.xml* file
 1. To create a new Interstitial Ad, call the *newInterstitialAd* method as shown
 
 ```
-newInterstitialAd(adId: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
+newInterstitialAd(adId: String, activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
 
 return type : InterstitialAd
-
-params:
-adId          - String,
-activity      - AppCompatActivity,
-screen        - String,
-closeListener - AdCloseListener
 
 ```
 2. To load an Interstitial Ad, call the *loadInterstitial* method as shown
 
 ```
 loadInterstitial(mInterstitialAd: InterstitialAd)
-
-params:
-mInterstitialAd - InterstitialAd
 
 ```
 #### Example
@@ -95,11 +86,6 @@ mInterstitialAd - InterstitialAd
 ```
 loadTemplateNativeAd(context: Context, adId: String, templateView: TemplateView, screen: String)
 
-params:
-context       - Context,
-adId          - String,
-templateView  - TemplateView,
-screen        - String
 ```
 #### Example
 ```
@@ -110,11 +96,6 @@ loadTemplateNativeAd(context = this, id = getString(R.string.test_native_id), te
 ```
 loadUnifiedNativeAd(context: Context, adId: String, nativeAdArea: LinearLayout, screen: String)
 
-params:
-context       - Context,
-adId          - String,
-nativeAdArea  - LinearLayout,
-screen        - String
 ```
 #### Example
 ```
