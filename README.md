@@ -33,7 +33,7 @@ CleverTap and Firebase can be used for push notifications in this library.
 * **L** type notifications must open the webview within the app. ("url": "https://youtube.com")
 * **D** type notification must open a specific page within the app. ("url": "AppName://ACTIVITYNAME")
 
-Data format to send for push notifications
+Example data format to send for push notifications
 ```
 {
   "to": "/topics/Appname",
