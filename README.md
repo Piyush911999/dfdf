@@ -1,7 +1,7 @@
 # AppyhighUtils
 
 
-1. Add the following line to your app level build.gradle file.
+1. Import the library by adding the following line to your app level build.gradle file.
 ```
 implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
 ```
