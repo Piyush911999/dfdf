@@ -69,7 +69,7 @@ loadInterstitial(mInterstitialAd: InterstitialAd)
 
 ### Native Ads
 
-#### Template Native Ad for corresponding activity/fragment
+#### 1. Template Native Ad for corresponding activity/fragment
 1. Add the following lines inside the layout of a corresponding activity/fragment
 ```
 <com.appyhigh.mylibrary.ads.TemplateView
@@ -87,7 +87,7 @@ loadTemplateNativeAd(context: Context, adId: String, templateView: TemplateView,
 ```
 loadTemplateNativeAd(context = this, id = getString(R.string.test_native_id), templateView = template_ad_small, "main_screen")
 ```
-#### UnifiedNativeAd
+#### 2. UnifiedNativeAd
 1. To load the Unified Native Ad, call the *loadUnifiedNativeAd* method as shown
 ```
 loadUnifiedNativeAd(context: Context, adId: String, nativeAdArea: LinearLayout, screen: String)
