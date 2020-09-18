@@ -44,10 +44,6 @@ Data format to send for push notifications
     "which": "L"
   }
 }
-
-/*
-L -> 
-*/
 ```
 
 1. Call *checkForNotifications* from your *MainActivity*
