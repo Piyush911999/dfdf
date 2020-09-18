@@ -7,12 +7,12 @@ implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
 ```
 This library consists of following modules
 
-    1)CleverTap and Firebase Events
-    2)Push Notifications (CleverTap and Firebase)
-    3)InApp Notifications (CleverTap and Firebase)
-    4)Ads (Interstitial and Native)
-    5)Dynamic Linking
-    6)Apxor Events
+    1) CleverTap and Firebase Events
+    2) Push Notifications (CleverTap and Firebase)
+    3) InApp Notifications (CleverTap and Firebase)
+    4) Ads (Interstitial and Native)
+    5) Dynamic Linking
+    6) Apxor Events
   
 ## CleverTap and Firebase Events
 
@@ -47,7 +47,7 @@ Add the following lines inside the application tag in *AndroidManifest.xml* file
 ```
 ### Interstitial Ads
 
-1.To create a new Interstitial Ad, call the *newInterstitialAd* method as shown
+1. To create a new Interstitial Ad, call the *newInterstitialAd* method as shown
 
 ```
 newInterstitialAd(adId: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
@@ -61,7 +61,7 @@ screen        - String,
 closeListener - AdCloseListener
 
 ```
-2.To load an Interstitial Ad, call the *loadInterstitial* method as shown
+2. To load an Interstitial Ad, call the *loadInterstitial* method as shown
 
 ```
 loadInterstitial(mInterstitialAd: InterstitialAd)
@@ -82,7 +82,7 @@ mInterstitialAd - InterstitialAd
 ### Native Ads
 
 #### Template Native Ad for corresponding activity/fragment
-1.Add the following lines inside the layout of a corresponding activity/fragment
+1. Add the following lines inside the layout of a corresponding activity/fragment
 ```
 <com.appyhigh.mylibrary.ads.TemplateView
         android:id="@+id/template_ad_small"
@@ -91,7 +91,7 @@ mInterstitialAd - InterstitialAd
         app:gnt_template_type="@layout/gnt_medium_template_view" />
 ```
 
-2.To load the template of Native Ad, call the *loadTemplateNativeAd* method as shown
+2. To load the template of Native Ad, call the *loadTemplateNativeAd* method as shown
 ```
 loadTemplateNativeAd(context: Context, adId: String, templateView: TemplateView, screen: String)
 
@@ -106,7 +106,7 @@ screen        - String
 loadTemplateNativeAd(context = this, id = getString(R.string.test_native_id), templateView = template_ad_small, "main_screen")
 ```
 #### UnifiedNativeAd
-1.To load the Unified Native Ad, call the *loadUnifiedNativeAd* method as shown
+1. To load the Unified Native Ad, call the *loadUnifiedNativeAd* method as shown
 ```
 loadUnifiedNativeAd(context: Context, adId: String, nativeAdArea: LinearLayout, screen: String)
 
