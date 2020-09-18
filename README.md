@@ -1,19 +1,19 @@
 # AppyhighUtils
 
-To import this library, Add the following line to your app level build.gradle file.
+1. Add the following line to your app level build.gradle file.
 
 implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
 
 This library consists of following modules
 
-    1)CleverTap Events
+    1)CleverTap and Firebase Events
     2)Push Notifications (CleverTap and Firebase)
     3)InApp Notifications (CleverTap and Firebase)
     4)Ads (Interstitial and Native)
     5)Dynamic Linking
     6)Apxor Events
   
-## CleverTap Events
+## CleverTap and Firebase Events
 
 A boolean value 'onlyFirebase' needs to be provided as parameter while using this module
 
@@ -27,11 +27,12 @@ CleverTap and Firebase can be used for push notifications in this library.
 
 
 
+
 ## InApp Notifications (CleverTap and Firebase)
 
 ## Ads (Interstitial and Native)
 
-Add the following lines to your app level build.gradle file.
+Add the following lines to your app-level build.gradle file.
 ```
 implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
 implementation 'com.google.android.gms:play-services-ads:{latestVersion}
@@ -41,7 +42,7 @@ Add the following lines inside the application tag in *AndroidManifest.xml* file
 ```
 <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="{admob-app-id}"/>
 
 ```
 ### Interstitial Ads
@@ -80,7 +81,7 @@ mInterstitialAd - InterstitialAd
 
 ### Native Ads
 
-#### Template Native Ad of corresponding activity/fragment
+#### Template Native Ad for corresponding activity/fragment
 1.Add the following lines inside the layout of a corresponding activity/fragment
 ```
 <com.appyhigh.mylibrary.ads.TemplateView
@@ -100,6 +101,10 @@ adId          - String,
 templateView  - TemplateView,
 screen        - String
 ```
+#### Example
+```
+loadTemplateNativeAd(context = this, id = getString(R.string.test_native_id), templateView = template_ad_small, "main_screen")
+```
 #### UnifiedNativeAd
 1.To load the Unified Native Ad, call the *loadUnifiedNativeAd* method as shown
 ```
@@ -111,46 +116,11 @@ adId          - String,
 nativeAdArea  - LinearLayout,
 screen        - String
 ```
-
+#### Example
+```
+loadTemplateNativeAd(context = this, adId = getString(R.string.test_native_id), nativeAdArea = linear_layout_id, "main_screen")
+```
 ## Dynamic Linking
 
-1. Create a Domain Link in your linked firebase account to use Dynamic Linking
-
-2. To receive Dynamic Links, add the following intent-filter to your *AndroidManifest.xml* file
-
-```
-<intent-filter>
-    <action android:name="android.intent.action.VIEW"/>
-    <category android:name="android.intent.category.DEFAULT"/>
-    <category android:name="android.intent.category.BROWSABLE"/>
-    <data
-        android:host="your_domainLink"
-        android:scheme="https"/>
-</intent-filter>
-```
-
-3. To create and share dynamic links that opens the link on your app, call the *createShortLink* method as shown
-```
-createShortLink(link: String, domain: String, packageName: String?, linkMessage: String, context: Context)
-
-params:
-link        - deepLink of your project
-domain      - domainLink of your project which you already created on the linked firebase account
-packageName - packageName of your project
-linkMessage - extra message that you want while sharing your link
-context     - Context
-
-```
-
-4. To receive the deep link, call the *getDynamicLink* method as shown
-```
-getDynamicLink(intent: Intent):Uri?
-
-return type : Uri
-
-params:
-intent      - Intent
-```
-  
 
 ## Apxor Events
