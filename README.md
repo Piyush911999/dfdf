@@ -28,8 +28,6 @@ CleverTap and Firebase can be used for push notifications in this library.
 
 
 
-
-
 ## InApp Notifications (CleverTap and Firebase)
 
 ## Ads (Interstitial and Native)
@@ -43,23 +41,22 @@ implementation 'com.google.android.gms:play-services-ads:{latestVersion}
 <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="{admob-app-id}"/>
-
 ```
+
 ### Interstitial Ads
 
 1. To create a new Interstitial Ad, call the *newInterstitialAd* method as shown
 
 ```
 newInterstitialAd(adId: String, activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
-
+```
 return type : InterstitialAd
 
-```
+
 2. To load an Interstitial Ad, call the *loadInterstitial* method as shown
 
 ```
 loadInterstitial(mInterstitialAd: InterstitialAd)
-
 ```
 #### Example
 ```
@@ -85,7 +82,6 @@ loadInterstitial(mInterstitialAd: InterstitialAd)
 2. To load the template of Native Ad, call the *loadTemplateNativeAd* method as shown
 ```
 loadTemplateNativeAd(context: Context, adId: String, templateView: TemplateView, screen: String)
-
 ```
 #### Example
 ```
@@ -95,7 +91,6 @@ loadTemplateNativeAd(context = this, id = getString(R.string.test_native_id), te
 1. To load the Unified Native Ad, call the *loadUnifiedNativeAd* method as shown
 ```
 loadUnifiedNativeAd(context: Context, adId: String, nativeAdArea: LinearLayout, screen: String)
-
 ```
 #### Example
 ```
