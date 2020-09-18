@@ -28,15 +28,15 @@ CleverTap and Firebase can be used for push notifications in this library.
 
 * We have 4 types of push notifications **P**, **B**, **L** and **D** which are identified by the which parameter.
 * ***to*** can have two values *fcmToken* or *topicName*
-* **P** type notifications must open the play store.
-* **B** type notifications must open the default browser.
-* **L** type notifications must open the webview within the app.
-* **D** type notification must open a specific page within the app.
+* **P** type notifications must open the play store. ("url": "com.appyhigh.com")
+* **B** type notifications must open the default browser. ("url": "https://asviral.com/")
+* **L** type notifications must open the webview within the app. ("url": "https://asviral.com/")
+* **D** type notification must open a specific page within the app. ("url": "AppName://ACTIVITYNAME")
 
 Data format to send for push notifications
 ```
 {
-  "to": "cFkuCMthJNE:APA91bFt2uXlcPjePxz22tBaP2KN62WGGL5uGfd7XXaVBvg7YK1s9LcMAdcSAbf49GbWCrPrtuI3xskJFw4hrNiqQCQ5qafS9Cn-44LH7R2qG0Pvj5zXcMIbM0VIz5u32VBQxTd3rWWH",
+  "to": "/topics/Appname",
   "data": {
     "title": "Krissh 3",
     "message": "See hritiks best action super hero movie only on liveTv",
