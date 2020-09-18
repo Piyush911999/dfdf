@@ -18,9 +18,9 @@ This library consists of following modules
 
 A boolean value 'onlyFirebase' needs to be provided as parameter while using this module
 
-'onlyFirebase'  - true  - Only Firebase Cloud Messaging is used for events
+'onlyFirebase'  - *true*  - Only Firebase Cloud Messaging is used for events
 
-'onlyFirebase'  - false - Both CleverTap and Firebase Cloud Messaging can be used for events
+'onlyFirebase'  - *false* - Both CleverTap and Firebase Cloud Messaging can be used for events
 
 ## Push Notifications (CleverTap and Firebase)
 
