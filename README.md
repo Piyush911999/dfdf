@@ -26,9 +26,8 @@ A boolean value 'onlyFirebase' needs to be provided as parameter while using thi
 
 CleverTap and Firebase can be used for push notifications in this library.
 
-a. We have 4 types of push notifications P, B, L and D which are identified by the which parameter.
-
-b. 'to' can have two values *fcmToken* or *topicName*
+* We have 4 types of push notifications P, B, L and D which are identified by the which parameter.
+* 'to' can have two values *fcmToken* or *topicName*
 
 c. **P** type notifications must open the play store.
 
