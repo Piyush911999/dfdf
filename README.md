@@ -26,6 +26,19 @@ A boolean value 'onlyFirebase' needs to be provided as parameter while using thi
 
 CleverTap and Firebase can be used for push notifications in this library.
 
+1. Call *checkForNotifications* from your *MainActivity*
+```
+checkForNotifications(
+            context: Context,
+            intent: Intent,
+            webViewActivity: Class<out Activity?>?
+        )
+```
+
+#### Example
+```
+MyFirebaseMessaging.checkForNotifications(context = this, intent = intent, webViewActivity = WebViewActivity::class.java)
+```
 
 
 ## InApp Notifications (CleverTap and Firebase)
