@@ -36,9 +36,7 @@ CleverTap and Firebase can be used for push notifications in this library.
 
 Add the following lines to your app-level build.gradle file.
 ```
-implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
 implementation 'com.google.android.gms:play-services-ads:{latestVersion}
-
 ```
 Add the following lines inside the application tag in *AndroidManifest.xml* file
 ```
