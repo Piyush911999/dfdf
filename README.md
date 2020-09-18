@@ -25,6 +25,30 @@ A boolean value 'onlyFirebase' needs to be provided as parameter while using thi
 ## Push Notifications (CleverTap and Firebase)
 
 CleverTap and Firebase can be used for push notifications in this library.
+a. We have 4 types of push notifications P, B, L and D which are identified by the which parameter.
+b. 'to' can have two values *fcmToken* or *topicName*
+c. **P** type notifications must open the play store.
+d. **B** type notifications must open the default browser.
+e. **L** type notifications must open the webview within the app.
+f. **D** type notification must open a specific page within the app.
+
+Data format to send for push notifications
+```
+{
+  "to": "cFkuCMthJNE:APA91bFt2uXlcPjePxz22tBaP2KN62WGGL5uGfd7XXaVBvg7YK1s9LcMAdcSAbf49GbWCrPrtuI3xskJFw4hrNiqQCQ5qafS9Cn-44LH7R2qG0Pvj5zXcMIbM0VIz5u32VBQxTd3rWWH",
+  "data": {
+    "title": "Krissh 3",
+    "message": "See hritiks best action super hero movie only on liveTv",
+    "image": "https://img.youtube.com/vi/1N_zzi2ad04/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=ZpuY57qrZs8",
+    "which": "L"
+  }
+}
+
+/*
+L -> 
+*/
+```
 
 1. Call *checkForNotifications* from your *MainActivity*
 ```
