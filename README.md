@@ -1,9 +1,10 @@
 # AppyhighUtils
 
+
 1. Add the following line to your app level build.gradle file.
-
+```
 implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
-
+```
 This library consists of following modules
 
     1)CleverTap and Firebase Events
